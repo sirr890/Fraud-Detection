@@ -15,12 +15,14 @@ My approach to solve this problem will be as follows. Given x, the model predict
 
 The dataset is split into training, validation, and test sets. I used 60% of the non-anomalous or normal data is used for the training set. Besides, the other part of the non-anomalous and anomalous data is split equally in the validation and testing sets 20% for validation and 20% for testing.
 
-The training set is used to fit the model. Then, the validation set is used to select the best model concerning a metric for different hyper-parameters. Since the data is very skewed, because y equals 0 is much more common, F-score would be a good evaluation metric.
+The training set is used to fit the model. Then, the validation set is used to select the best model concerning a metric for different hyper-parameters. Since the data is very skewed, because y equals 0 is much more common, F-score would be a good evaluation metric https://en.wikipedia.org/wiki/F-score
 
 $𝐹1=\frac{2∗𝑃∗𝑅}{𝑃+𝑅}$ 
+
 where P and R are Precision and Recall.
 
-𝑃=𝑇𝑃𝑇𝑃+𝐹𝑃  and  𝑅=𝑇𝑃𝑇𝑃+𝐹𝑁 
+$𝑃=\frac{𝑇𝑃}{𝑇𝑃+𝐹𝑃}$ and $𝑅=\frac{𝑇𝑃}{𝑇𝑃+𝐹𝑁}$ 
+
 True Positive (TP): non-anomalous or normal items predicted as normal.
 False Negative (FN): anomaly items indicated as normal. Also called a Type II error in statistics.
 False Positive (FP): normal items predicted as anomalies. Also called a Type I error in statistics.
