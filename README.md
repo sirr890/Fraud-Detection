@@ -42,4 +42,5 @@ The training, validation and test sets have 283178, 814 and 815 objects, respect
 
 **Confusion matrix**
 
-[drawing.pdf](https://github.com/sirr890/Fraud-Detection/files/9213480/drawing.pdf)
+![g906](https://user-images.githubusercontent.com/40067462/181618297-da3d684e-fc6d-4319-8b6d-bc57eba7c1b8.png)
+
